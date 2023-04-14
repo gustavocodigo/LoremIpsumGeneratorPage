@@ -6,27 +6,54 @@
 
 
 header {
-  background-color: blue;
-  margin: 0px;
-  padding: 10px;
+  background-color: #949999FF;
+ 
+  padding: 2px;
   padding-left: 39px;
-  background-color: #697184
+  max-width: 660px;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  
 }
 
 
 body, html {
+  
   padding: 0px;
   margin: 0;
-  
+  background-image: url(https://cdn.glitch.global/cc10ee6c-06fc-4dee-bb4d-795e1b2e95bf/e858c42d-ed79-454b-81c2-281261053425.image.png?v=1681497556612);
+ background-repeat: no-repeat;
+    background-size: cover;
+/*   background-image: url(https://cdn.glitch.global/cc10ee6c-06fc-4dee-bb4d-795e1b2e95bf/977f62ac-1cc1-4e03-b03d-20e4f1209c58.image.png?v=1681501716751) */
 }
 
 main {
   max-width: 700px;
   margin: auto;
- 
+  background-color: white;
+  background-position: center;
+
+
+  border: 2px solid black;
+  min-height: 98vh;
+  
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
 }
 
 
 button {
   padding: 13px;
+}
+
+.machine-image {
+  max-width: 400px;
+  width: 50%;
+}
+
+.logo {
+  WIDTH: 70PX;
+  height: 50px;
 }

@@ -1,6 +1,10 @@
 
+
+let lastText = ""
+
 function generateClick() {
   let type = getSelectedRadio()
+    document.getElementById("copied").style.visibility = "hidden"
   if (  type == null) return
   switch( type ) {
     case 0:
@@ -13,8 +17,12 @@ function generateClick() {
       generateDescription();
       break;
   }
+  
+  lastText = document.getElementById("generated-text").innerText
  
 }
+
+
 
 function getSelectedRadio() {
   var radios = document.getElementsByName("type");
@@ -26,6 +34,9 @@ function getSelectedRadio() {
   }
 }
 
+
+
+
 function generateWord() {
   document.getElementById("generated-text").innerText = "Lorem";
 }
@@ -36,4 +47,11 @@ function generateParagraph() {
 
 function generateDescription() {
   document.getElementById("generated-text").innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget enim vitae turpis bibendum ultricies sed quis odio. Maecenas venenatis malesuada efficitur. Nullam ac nisl sed lectus auctor fringilla. Nullam ut bibendum urna. Morbi a hendrerit nulla. Nullam ullamcorper nulla quis libero malesuada, quis vehicula eros vehicula. Fusce sit amet risus id urna luctus elementum quis at sapien. Donec ultricies turpis eu dolor molestie ultrices. Proin facilisis magna justo, id scelerisque sapien faucibus vel. Quisque in felis eget velit egestas bibendum a eget turpis. Mauris gravida lacus eget nisi finibus convallis. Sed vitae ligula ante. Donec blandit, enim sit amet maximus interdum, enim odio pellentesque elit, at dictum elit arcu sit amet urna. Aenean fringilla lectus odio, quis tristique nunc feugiat non.";
+}
+
+
+function copyClick() {
+  navigator.clipboard.writeText(lastText);
+  document.getElementById("copied").style.visibility = "visible"
+  
 }

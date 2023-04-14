@@ -8,7 +8,6 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-   
 
     <!--
       This is the page head - it contains info the browser uses
@@ -21,59 +20,79 @@
     <link rel="stylesheet" href="/style.css" />
 
     <!-- The website JavaScript file -->
-      <script src="/lorem-ipsum.js" ></script>
-    <script src="/script.js" ></script>
-   
+    <script src="/lorem-ipsum.js"></script>
+    <script src="/script.js"></script>
   </head>
   <body>
-    
     <header>
-    <h1>
-      Lorem Ipsum generator
-      </h1>
+      <img
+        src="https://cdn.glitch.global/cc10ee6c-06fc-4dee-bb4d-795e1b2e95bf/d485fb77-0511-4f3d-a96a-003844b7ca77.clipart2420795.png?v=1681499507348"
+        class="logo"
+      />
+      <h1 style="margin-left: 30px">Lorem Ipsum generator</h1>
     </header>
     <main>
-      
-    <section style= "display:flex; max-width: 700px; padding: 20px;">
-       <img class="lorem-image" src="https://cdn.glitch.global/cc10ee6c-06fc-4dee-bb4d-795e1b2e95bf/aa950817-8f67-4b46-9ebd-4dcd2701fff0.image.png?v=1681489217708">
-      
-      <div style="margin: 10px;">
-         <h1>
-      Lorem ipsum - Gerador de texto
-    </h1>
-         <p>O Lorem Ipsum é um texto fictício utilizado pela indústria tipográfica e de impressão como espaço reservado para o layout de seus projetos. Ele tem a vantagem de ter uma distribuição de letras e espaços semelhante à do idioma inglês, tornando mais fácil a visualização do layout do texto.</p>
-      </div>
-      
-     
+      <section style="display: flex; max-width: 700px; padding: 20px">
+        <img
+          class="lorem-image"
+          src="https://cdn.glitch.global/cc10ee6c-06fc-4dee-bb4d-795e1b2e95bf/aa950817-8f67-4b46-9ebd-4dcd2701fff0.image.png?v=1681489217708"
+        />
+
+        <div style="margin: 10px">
+          <h1>Lorem ipsum - Gerador de texto</h1>
+          <p>
+            O Lorem Ipsum é um texto fictício utilizado pela indústria
+            tipográfica e de impressão como espaço reservado para o layout de
+            seus projetos. Ele tem a vantagem de ter uma distribuição de letras
+            e espaços semelhante à do idioma inglês, tornando mais fácil a
+            visualização do layout do texto.
+          </p>
+        </div>
       </section>
-      
-      <hr>
-      
-      
-      <section style="padding: 30px; display: flex; flex-direction: column;" >
-        <button onclick="generateClick()">Generate
-        
-        </button>
-        <div style="width: 100%; text-align: center; padding: 15px;">
-          <input type="radio" id="1" name="type" value="word">
-<label for="1">Palavra</label>
 
-<input type="radio" id="2" name="type" value="paragraph">
-<label for="2">Parágrafo</label>
+      <hr />
 
-<input type="radio" id="3" name="type" value="description">
+      <section style="padding: 30px; display: flex; flex-direction: column; ">
+        <button onclick="generateClick()">Generate</button>
+        <div style="width: 100%; text-align: center; padding: 15px">
+          <input type="radio" id="1" name="type" value="word" />
+          <label for="1">Palavra</label>
+
+          <input type="radio" id="2" name="type" value="paragraph" />
+          <label for="2">Parágrafo</label>
+
+          <input type="radio" id="3" name="type" value="description" />
           <label for="3">Descrição</label>
         </div>
-        <hr>
-      <div style="margin: 20px; max-width: 700px; margin: auto;">
-         <label style="margin: 30px;" id="generated-text">Generated text</label>
+        <hr />
+
+        <div style="width: 100%; text-align: right;">
+          <label id = "copied" style="margin-left: auto; visibility: hidden">Copied !</label>
+          <button
+            style="
+              width: 80px;
+              margin-left: auto;
+              margin-right: 20px;
+              margin-bottom: 20px;
+            "
+                  
+                  onclick="copyClick()"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewbox="0 0 16 16">
+  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+  <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+</svg>
+          </button>
         </div>
-     
+
+        <div style="margin: 20px; max-width: 700px; margin: auto">
+          <label style="margin: 30px" id="generated-text">Generated text</label>
+        </div>
       </section>
-   
+
+      <section
+        style="display: flex; width: 100%; content-align: center; padding: 30px"
+      ></section>
     </main>
-    
-    
-   
   </body>
 </html>
