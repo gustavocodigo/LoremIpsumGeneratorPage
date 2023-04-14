@@ -1,0 +1,32 @@
+.lorem-image {
+  width: 50%;
+  max-width: 200px;
+  
+}
+
+
+header {
+  background-color: blue;
+  margin: 0px;
+  padding: 10px;
+  padding-left: 39px;
+  background-color: #697184
+}
+
+
+body, html {
+  padding: 0px;
+  margin: 0;
+  
+}
+
+main {
+  max-width: 700px;
+  margin: auto;
+ 
+}
+
+
+button {
+  padding: 13px;
+}
