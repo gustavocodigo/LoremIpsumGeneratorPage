@@ -1,16 +1,29 @@
+@font-face {
+   font-family: 'FontLogo';
+  font-weight: 100;
+  src: url(https://cdn.glitch.global/cc10ee6c-06fc-4dee-bb4d-795e1b2e95bf/6445040b-85de-41f9-b018-92a48730868a.RAINYDAY-Italic.ttf?v=1681502418550)
+}
+
+
+
+
+
 .lorem-image {
   width: 50%;
   max-width: 200px;
+  
   
 }
 
 
 header {
+  border: 2px solid black;
+  font-family: "FontLogo";
   background-color: #949999FF;
  
-  padding: 2px;
+  padding: 20px;
   padding-left: 39px;
-  max-width: 660px;
+  max-width: 640px;
   text-align: center;
   margin: auto;
   display: flex;
@@ -19,13 +32,17 @@ header {
 }
 
 
+
+
+
 body, html {
   
   padding: 0px;
   margin: 0;
-  background-image: url(https://cdn.glitch.global/cc10ee6c-06fc-4dee-bb4d-795e1b2e95bf/e858c42d-ed79-454b-81c2-281261053425.image.png?v=1681497556612);
+/*   background-image: url(https://cdn.glitch.global/cc10ee6c-06fc-4dee-bb4d-795e1b2e95bf/e858c42d-ed79-454b-81c2-281261053425.image.png?v=1681497556612); */
  background-repeat: no-repeat;
     background-size: cover;
+  background-color: #E3E2CF
 /*   background-image: url(https://cdn.glitch.global/cc10ee6c-06fc-4dee-bb4d-795e1b2e95bf/977f62ac-1cc1-4e03-b03d-20e4f1209c58.image.png?v=1681501716751) */
 }
 
@@ -46,7 +63,21 @@ main {
 
 button {
   padding: 13px;
+  transform: scale(0.99);
+  transition: 0.5s;
+  font-weight: 600;
+  font-size: 1.2em;
 }
+
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.5s;
+  background-color: white;
+  color: black;
+}
+
 
 .machine-image {
   max-width: 400px;
