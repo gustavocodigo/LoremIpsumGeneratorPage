@@ -1,7 +1,6 @@
 @font-face {
    font-family: 'FontLogo';
   font-weight: 100;
-  src: url(https://cdn.glitch.global/cc10ee6c-06fc-4dee-bb4d-795e1b2e95bf/6445040b-85de-41f9-b018-92a48730868a.RAINYDAY-Italic.ttf?v=1681502418550)
 }
 
 
@@ -18,16 +17,18 @@
 
 header {
   border: 2px solid black;
-  font-family: "FontLogo";
+  
   background-color: #949999FF;
  
   padding: 20px;
-  padding-left: 39px;
-  max-width: 640px;
+  padding-left: 25px;
+
   text-align: center;
   margin: auto;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
+  font-size: 0.7em;
   
 }
 
@@ -36,7 +37,6 @@ header {
 
 
 body, html {
-  
   padding: 0px;
   margin: 0;
 /*   background-image: url(https://cdn.glitch.global/cc10ee6c-06fc-4dee-bb4d-795e1b2e95bf/e858c42d-ed79-454b-81c2-281261053425.image.png?v=1681497556612); */
@@ -47,17 +47,16 @@ body, html {
 }
 
 main {
-  max-width: 700px;
-  margin: auto;
+ 
   background-color: white;
   background-position: center;
-
-
-  border: 2px solid black;
+  max-width: 700px;
+  padding: 10px;
+  border: 1px solid black;
   min-height: 98vh;
-  
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
+  margin: auto;
+
+
 }
 
 
@@ -85,6 +84,11 @@ button:hover {
 }
 
 .logo {
-  WIDTH: 70PX;
+  width: 70PX;
   height: 50px;
+}
+
+
+.generated-text {
+  min-height: 600px;
 }
