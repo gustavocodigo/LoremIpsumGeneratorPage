@@ -25,15 +25,15 @@
     <script src="js/script.js"></script>
   </head>
   <body>
-    <header>
+    <header class="header">
       <img
         src="https://cdn.glitch.global/cc10ee6c-06fc-4dee-bb4d-795e1b2e95bf/d485fb77-0511-4f3d-a96a-003844b7ca77.clipart2420795.png?v=1681499507348"
         class="logo"
       />
-      <h1 style="margin-left: 30px">Lorem Ipsum generator</h1>
+      <h1 class="title">Lorem Ipsum generator</h1>
     </header>
     <main>
-      <section style="display: flex;">
+      <section class= "infor">
         <img
           class="lorem-image"
           src="https://cdn.glitch.global/cc10ee6c-06fc-4dee-bb4d-795e1b2e95bf/aa950817-8f67-4b46-9ebd-4dcd2701fff0.image.png?v=1681489217708"
@@ -54,8 +54,7 @@
       <hr />
 
       <section style="padding: 30px; display: flex; flex-direction: column; box-sizing: border-box">
-        <button onclick="generateClick()">Generate</button>
-        <div style="width: 100%; text-align: center; padding: 15px;">
+         <div style="width: 100%; text-align: center; padding: 15px;">
           <input type="radio" id="1" name="type" value="word" />
           <label for="1">Palavra</label>
 
@@ -65,6 +64,8 @@
           <input type="radio" id="3" name="type" value="description" />
           <label for="3">Descrição</label>
         </div>
+        <button class="myButton" onclick="generateClick()">Generate</button>
+       
         <hr />
 
         <div style="width: 100%; text-align: right;">
@@ -76,6 +77,7 @@
               margin-right: 20px;
               margin-bottom: 20px;
             "
+                  class="copy_button"
                   
                   onclick="copyClick()"
           >
